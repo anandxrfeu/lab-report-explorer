@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar_primary-links{
+    display: flex;
+}
+
+.navbar_primary-links p{
+    margin-left: 10px;
+}
+
+.navbar_secondary-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_secondary-links button{
+    margin-left: 10px;
+}

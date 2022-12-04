@@ -1,0 +1,33 @@
+*{
+	box-sizing: border-box; /* width  = content + padding + Border */
+}
+
+body{
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 5%;
+}
+
+.hero{
+  text-align: center;
+}
+
+.main_link{
+  text-align: center;
+  width:100%;
+  margin: 0 auto;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center
+}
+
+.main_link a{
+  margin-left: 5%;
+}
