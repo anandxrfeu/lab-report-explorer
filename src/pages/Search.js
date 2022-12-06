@@ -51,7 +51,7 @@ const Search = () => {
                 const response = await axios.get(GDRIVE_FILES_END_POINT_URI,{
                     params:{
                         q: `'${folderId}' in parents and mimeType:'${mimeType}'`,
-                        fields: 'files(id,name,mimeType,size)',
+                        fields: 'files(id,name,mimeType,webContentLink ,size)',
                         spaces: 'drive',
                       },
                     headers: {
@@ -79,7 +79,7 @@ const Search = () => {
         <div>
             <Navbar />
             {files && files.length > 0 && (
-                 files.map(file => <p key={file.id}>{file.name}</p>)
+                 files.map(file => <p key={file.id}>{file.name} <a href={file.webContentLink}>download</a></p>)
             )}
         </div>
         )
